@@ -1,7 +1,7 @@
 public class ContaPoupanca extends Conta{
   
-  public ContaPoupanca(Conta conta) {
-    super(conta.getAgencia(), conta.getNumero());
+  public ContaPoupanca(int agencia, int numero) {
+    super(agencia, numero);
   }
-  
+
 }

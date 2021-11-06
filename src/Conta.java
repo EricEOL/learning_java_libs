@@ -18,22 +18,17 @@ public class Conta {
     this.saldo += valor;
   }
 
-  public boolean saca(double valor) {
-    if (valor <= this.saldo) {
-      this.saldo -= valor;
-      return true;
-    } else {
-      return false;
+  public void saca(double valor) {
+    if (valor > this.saldo) {
+      throw new SaldoInsuficienteException("Insuficiente | Saldo: " + this.saldo + ", Valor: " + valor);
     }
+
+    this.saldo -= valor;
   }
 
-  public boolean transfere(double valor, Conta destino) {
-    if (valor <= this.saldo) {
-      this.saca(valor);
-      destino.deposita(valor);
-      return true;
-    }
-    return false;
+  public void transfere(double valor, Conta destino) {
+    this.saca(valor);
+    destino.deposita(valor);
   }
 
   public double getSaldo() {

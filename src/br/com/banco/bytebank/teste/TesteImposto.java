@@ -1,6 +1,6 @@
-package teste;
+package br.com.banco.bytebank.teste;
 
-import modelo.*;
+import br.com.banco.bytebank.modelo.*;
 
 public class TesteImposto {
   public static void main(String[] args) {

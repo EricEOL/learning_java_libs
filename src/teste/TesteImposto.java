@@ -1,3 +1,7 @@
+package teste;
+
+import modelo.*;
+
 public class TesteImposto {
   public static void main(String[] args) {
     ContaCorrente cc = new ContaCorrente(1111, 1111);

@@ -2,6 +2,12 @@ package br.com.banco.bytebank.teste;
 
 import br.com.banco.bytebank.modelo.*;
 
+/**
+ * Classe que representa um cliente no ByteBank
+ * @author Eric Lopes
+ * @version 1.0
+ */
+
 public class TesteContas {
   public static void main(String[] args) {
 

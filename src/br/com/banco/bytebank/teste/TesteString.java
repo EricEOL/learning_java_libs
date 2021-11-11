@@ -9,7 +9,14 @@ public class TesteString {
 		String novoNome = nome.replace("a", "b");
 		nome.toUpperCase();
 		
-		System.out.println(nome.toUpperCase());
+		int position = nome.indexOf("k");
+		System.out.println(position);
+		
+		System.out.println(novoNome.toUpperCase());
+		
+		String vazio = " ";
+		
+		System.out.println(vazio.trim().isEmpty());
 	}
 
 }
